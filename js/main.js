@@ -1,3 +1,11 @@
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+        preloader.classList.add('hide');
+        setTimeout(() => preloader.style.display = 'none', 500);
+    }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // --- Language Switcher ---
