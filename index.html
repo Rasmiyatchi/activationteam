@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Activation Group - Professional IT Services for Modern Companies. We build your digital future.">
+    <title>Activation Group | IT & Software Services</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Gradient Orbs Background -->
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo" style="display:flex; align-items:center; gap:0.5rem;">
+                <img src="assets/images/logo.png" alt="Activation Logo" style="height: 48px; width: auto; object-fit: contain;">
+                Activation<span>Group</span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#about" class="nav-link" data-i18n="nav_about">Biz haqimizda</a>
+                <a href="#services" class="nav-link" data-i18n="nav_services">Xizmatlar</a>
+                <a href="#portfolio" class="nav-link" data-i18n="nav_portfolio">Portfolio</a>
+                <a href="#team" class="nav-link" data-i18n="nav_team">Jamoamiz</a>
+                <a href="#pricing" class="nav-link" data-i18n="nav_pricing">Narxlar</a>
+                <a href="#contact" class="btn btn-sm btn-primary" data-i18n="nav_contact">Bog'lanish</a>
+            </nav>
+
+            <div class="nav-right">
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="uz">UZ</button>
+                    <button class="lang-btn" data-lang="ru">RU</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home / Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-overlay"></div>
+            <div class="container hero-container">
+                <div class="hero-content fade-up">
+                    <div class="badge" data-i18n="hero_badge">🚀 Dasturlash va IT Kompaniyasi</div>
+                    <h1 data-i18n="hero_title">Raqamli <span class="text-gradient">Kelajakni</span> Quramiz</h1>
+                    <p data-i18n="hero_desc">Zamonaviy kompaniyalar uchun professional IT xizmatlari. Biznesingizni eng so'nggi texnologiyalar va mukammal dasturiy yechimlar bilan yuksaltiring.</p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn btn-primary btn-lg" data-i18n="hero_btn1">Konsultatsiya olish</a>
+                        <a href="#portfolio" class="btn btn-secondary btn-lg" data-i18n="hero_btn2">Ishlarimizni ko'rish</a>
+                    </div>
+                </div>
+                <div class="hero-visual fade-up delay-2">
+                    <img src="assets/images/hero_bg.png" alt="Digital Abstract" class="floating-img">
+                    <div class="stats-card float-anim">
+                        <i class="ph ph-users-three"></i>
+                        <div class="counter" data-target="150">0</div>
+                        <span data-i18n="stat_clients">Mamnun Mijozlar</span>
+                    </div>
+                    <div class="stats-card float-anim-2 offset">
+                        <i class="ph ph-code"></i>
+                        <div class="counter" data-target="230">0</div>
+                        <span data-i18n="stat_projects">Bajarilgan Loyihalar</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <span class="sub-title" data-i18n="about_sub">Biz haqimizda</span>
+                    <h2 data-i18n="about_title">Activision Group o'zi nima?</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text fade-up">
+                        <p class="lead" data-i18n="about_lead">Biz noldan maxsus veb, mobil dasturlar va yangi startap mahsulotlarini yaratishga ixtisoslashgan yetakchi IT kompaniyamiz.</p>
+                        <p data-i18n="about_desc">Bizning vazifamiz — innovatsion texnologiyalar va kreativ brending orqali biznes hamda uning maqsadli auditoriyasi o'rtasida ko'prik yaratishdir. Maqsadimiz mintaqadagi yetakchi raqamli transformatsiya hamkoriga aylanish.</p>
+                        <ul class="features-list">
+                            <li><i class="ph ph-check-circle text-gradient"></i> <span data-i18n="about_f1">Ma'lumotlarga asoslangan strategiyalar</span></li>
+                            <li><i class="ph ph-check-circle text-gradient"></i> <span data-i18n="about_f2">Zamonaviy veb texnologiyalar</span></li>
+                            <li><i class="ph ph-check-circle text-gradient"></i> <span data-i18n="about_f3">Tajribali mutaxassislar jamoasi</span></li>
+                            <li><i class="ph ph-check-circle text-gradient"></i> <span data-i18n="about_f4">Shaffof va tezkor jarayon</span></li>
+                        </ul>
+                    </div>
+                    <div class="about-image-wrapper fade-up delay-1">
+                        <div class="about-image">
+                            <!-- Placeholder div style for structural balance -->
+                            <div class="img-placeholder bg-gradient"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header center fade-up">
+                    <span class="sub-title" data-i18n="srv_sub">Nimalar qilamiz</span>
+                    <h2 data-i18n="srv_title">Bizning Xizmatlar</h2>
+                    <p data-i18n="srv_desc">Biz sizning biznes talablaringizga moslashtirilgan to'liq sikldagi raqamli yechimlarni taqdim etamiz.</p>
+                </div>
+
+                <div class="services-wrapper">
+                    <!-- Complete IT Services List -->
+                    <div class="service-cards full-grid">
+                        <div class="s-card hover-glow fade-up">
+                            <i class="ph ph-browser"></i>
+                            <h4 data-i18n="srv_1_t">Veb Dasturlash</h4>
+                            <p data-i18n="srv_1_d">React, Next.js va xavfsiz backend texnologiyalari yordamida tezkor hamda zamonaviy veb-platformalar qurish.</p>
+                        </div>
+                        <div class="s-card hover-glow fade-up delay-1">
+                            <i class="ph ph-device-mobile"></i>
+                            <h4 data-i18n="srv_2_t">Mobil Ilovalar Ishlab Chiqish</h4>
+                            <p data-i18n="srv_2_d">Foydalanuvchilar qulayligini ta'minlovchi iOS va Android uchun sifatli va tezkor mobil ilovalar yaratish.</p>
+                        </div>
+                        <div class="s-card hover-glow fade-up delay-2">
+                            <i class="ph ph-rocket-launch"></i>
+                            <h4 data-i18n="srv_3_t">Startuplar uchun Yoshlash (MVP)</h4>
+                            <p data-i18n="srv_3_d">Yangi g'oyasi borlar uchun tayyor MVP (boshlang'ich versiya) qurib berish va butun SaaS tizimini noldan ko'tarish.</p>
+                        </div>
+                        <div class="s-card hover-glow fade-up">
+                            <i class="ph ph-database"></i>
+                            <h4 data-i18n="srv_4_t">CRM & ERP Tizimlar</h4>
+                            <p data-i18n="srv_4_d">Korxonalarning ichki ishlari va mijozlarini boshqarish uchun juda qulay maxsus CRM va yirik boshqaruv dasturlari.</p>
+                        </div>
+                        <div class="s-card hover-glow fade-up delay-1">
+                            <i class="ph ph-robot"></i>
+                            <h4 data-i18n="srv_5_t">Murakkab Telegram Botlar</h4>
+                            <p data-i18n="srv_5_d">Ichiga to'lov tizimi, sun'iy intellekt va ma'lumotlar bazasi ulangan avtomatlashtirilgan multi-botlar yaratish.</p>
+                        </div>
+                        <div class="s-card hover-glow fade-up delay-2">
+                            <i class="ph ph-cpu"></i>
+                            <h4 data-i18n="srv_6_t">Biznesni Avtomatlashtirish</h4>
+                            <p data-i18n="srv_6_d">Qo'lda bajariladigan ishlarni to'liq raqamlashtirish orqali jamoa ish unumdorligini kamida 10 barobarga oshirish.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="section-header center fade-up">
+                    <span class="sub-title" data-i18n="port_sub">Bizning ishlarimiz</span>
+                    <h2 data-i18n="port_title">Taniqli Loyihalar</h2>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-card fade-up">
+                        <div class="p-img-wrapper">
+                            <img src="assets/images/portfolio_web.png" alt="E-Commerce CRM Dashboard">
+                        </div>
+                        <div class="p-content">
+                            <span class="p-tag" data-i18n="port_1_tag">IT Xizmat</span>
+                            <h3 data-i18n="port_1_t">E-Commerce CRM Doshbordi</h3>
+                            <p data-i18n="port_1_d">Haqiqiy vaqtdagi tahlil va omborni boshqarish imkoniyatiga ega to'liq funksiyali B2B CRM.</p>
+                            <div class="p-tech">
+                                <span>React</span><span>Node.js</span><span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-card fade-up delay-1">
+                        <div class="p-img-wrapper">
+                            <img src="assets/images/portfolio_web.png" alt="Gov Project Dashboard">
+                        </div>
+                        <div class="p-content">
+                            <span class="p-tag" data-i18n="port_2_tag">Davlat Loyihasi</span>
+                            <h3 data-i18n="port_2_t">Mening Uyim / Mening Inspektorim</h3>
+                            <p data-i18n="port_2_d">Aholining yashash joyi bilan bog'liq xizmatlarni optimallashtirish va tezkor murojaat qilish tizimi.</p>
+                            <div class="p-tech">
+                                <span>Node.js</span><span>React</span><span>Cloud</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="portfolio-card fade-up delay-2">
+                        <div class="p-img-wrapper">
+                            <img src="assets/images/portfolio_web.png" alt="Fintech Web App" style="filter: hue-rotate(120deg);">
+                        </div>
+                        <div class="p-content">
+                            <span class="p-tag" data-i18n="port_3_tag">IT Xizmat</span>
+                            <h3 data-i18n="port_3_t">FinTech Investitsiya Portali</h3>
+                            <p data-i18n="port_3_d">Shaxsiy mablag'larni boshqarish va portfelni kuzatib borish uchun mo'ljallangan xavfsiz veb-ilova.</p>
+                            <div class="p-tech">
+                                <span>Next.js</span><span>Web3</span><span>Tailwind</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Marquee -->
+        <section class="partners">
+            <div class="container">
+                <p class="partners-title fade-up" data-i18n="part_title">Innovatsion kompaniyalar tomonidan ishonch bildirilgan</p>
+            </div>
+            <div class="marquee fade-up">
+                <div class="marquee-content">
+                    <div class="partner-logo">Fatvo.uz</div>
+                    <div class="partner-logo">Mening Uyim</div>
+                    <div class="partner-logo">Mening Inspektorim</div>
+                    <div class="partner-logo">Bojxona Service</div>
+                    <!-- Duplicate for infinite scroll effect -->
+                    <div class="partner-logo">Fatvo.uz</div>
+                    <div class="partner-logo">Mening Uyim</div>
+                    <div class="partner-logo">Mening Inspektorim</div>
+                    <div class="partner-logo">Bojxona Service</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team" id="team">
+            <div class="container">
+                <div class="section-header center fade-up">
+                    <span class="sub-title" data-i18n="team_sub">Bizning Jamoa</span>
+                    <h2 data-i18n="team_title">Profesionallar bilan tanishing</h2>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card fade-up">
+                        <img src="assets/images/team_1.png" alt="Aziz Rahimov">
+                        <h4 data-i18n="team_1_n">Aziz Rahimov</h4>
+                        <p class="role text-gradient" data-i18n="team_1_r">Kompaniya Asoschisi (CEO)</p>
+                        <p class="bio" data-i18n="team_1_b">IT va Startap sohasida 10 yildan ortiq tajribaga ega strategik rahbar.</p>
+                    </div>
+                    <div class="team-card fade-up delay-1">
+                        <img src="assets/images/team_2.png" alt="Malika Asatova">
+                        <h4 data-i18n="team_2_n">Malika Asatova</h4>
+                        <p class="role text-gradient" data-i18n="team_2_r">Bosh Dasturchi (Lead Dev)</p>
+                        <p class="bio" data-i18n="team_2_b">Murakkab tizimlar va katta ma'lumotlar bazasi arxitekturasiga ixtisoslashgan arxitektor.</p>
+                    </div>
+                    <div class="team-card fade-up delay-2">
+                        <img src="assets/images/team_3.png" alt="Jamshid Vohidov">
+                        <h4 data-i18n="team_3_n">Jamshid Vohidov</h4>
+                        <p class="role text-gradient" data-i18n="team_3_r">UI/UX Dizayner</p>
+                        <p class="bio" data-i18n="team_3_b">Sayt va mobil ilovalar uchun o'ta qulay hamda premium dizaynlar yaratuvchi dizayner.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-header center fade-up">
+                    <span class="sub-title" data-i18n="test_sub">Mijozlar Fikri</span>
+                    <h2 data-i18n="test_title">Ular nima deydi</h2>
+                </div>
+                <div class="testimo-grid">
+                    <div class="t-card fade-up">
+                        <div class="stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="t-text" data-i18n="test_1_d">"Activision Group bizning onlayn tarmog'imizni butunlay o'zgartirdi. Ular yaratgan CRM tizimi haftasiga 15 soatlik qo'l mehnatini tejamoqda!"</p>
+                        <div class="t-author">
+                            <div class="avatar bg-blue">JS</div>
+                            <div>
+                                <strong>John Smith</strong>
+                                <span data-i18n="test_1_r">TechCorp Direktori</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t-card fade-up delay-1">
+                        <div class="stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="t-text" data-i18n="test_2_d">"Bizning biznesimiz uchun yozib berilgan mobil ilova klientlarimizni ushlab qolish darajasini kutilganidan ham oshirdi."</p>
+                        <div class="t-author">
+                            <div class="avatar bg-purple">AM</div>
+                            <div>
+                                <strong>Anna Myres</strong>
+                                <span data-i18n="test_2_r">Loyiha boshqaruvchisi, GlobalShop</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t-card fade-up delay-2">
+                        <div class="stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="t-text" data-i18n="test_3_d">"Tez, ishonchli va nihoyatda professional. Ular biz uchun ishlab chiqqan veb-ilova ajoyib zamonaviy ko'rinishga ega va muammosiz ishlaydi."</p>
+                        <div class="t-author">
+                            <div class="avatar bg-gradient">RJ</div>
+                            <div>
+                                <strong>Rustam J.</strong>
+                                <span data-i18n="test_3_r">Asoschi, AppWorks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing" id="pricing">
+            <div class="container">
+                <div class="section-header center fade-up">
+                    <span class="sub-title" data-i18n="price_sub">Narxlar Rejasi</span>
+                    <h2 data-i18n="price_title">Paketni Tanlang</h2>
+                    <p data-i18n="price_desc">Har qanday miqyosdagi biznes uchun moslashtirilgan shaffof narxlar.</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="p-card fade-up">
+                        <h4 data-i18n="pr_b_t">Vizitka Saytlar</h4>
+                        <div class="price" data-i18n="pr_price_1" style="font-size:2.5rem; margin-top:20px;">$300 dan</div>
+                        <p class="p-desc" data-i18n="pr_b_d">Endi boshlayotgan kichik bizneslar uchun juda mos.</p>
+                        <ul class="p-features">
+                            <li><i class="ph ph-check"></i> <span data-i18n="pr_b_f1">Chiroyli Design va Layout</span></li>
+                            <li><i class="ph ph-check"></i> <span data-i18n="pr_b_f2">Telefonda chiroyli ko'rinish</span></li>
+                            <li><i class="ph ph-check"></i> <span data-i18n="pr_b_f3">Aloqa shakli (Form/Contact)</span></li>
+                            <li><i class="ph ph-check"></i> <span data-i18n="pr_b_f4">Boshlang'ich SEO (sayt topilishi)</span></li>
+                        </ul>
+                        <a href="#contact" class="btn btn-secondary w-100" data-i18n="pr_btn">Boshlash</a>
+                    </div>
+                    <div class="p-card popular fade-up delay-1">
+                        <div class="popular-badge" data-i18n="pr_s_badge">Eng Ommabop</div>
+                        <h4 data-i18n="pr_s_t">Standart</h4>
+                        <div class="price" data-i18n="pr_price_2" style="font-size:2.5rem; margin-top:20px;">$500 - $3k</div>
+                        <p class="p-desc" data-i18n="pr_s_d">Tez o'sayotgan kompaniyalar uchun ideal.</p>
+                        <ul class="p-features">
+                            <li><i class="ph ph-check"></i> <span data-i18n="pr_s_f1">Ma'lumotlar bazasi integratsiyasi</span></li>
+                            <li><i class="ph ph-check"></i> <span data-i18n="pr_s_f2">Admin panelini yaratish</span></li>
+                            <li><i class="ph ph-check"></i> <span data-i18n="pr_s_f3">To'lov tizimlarini ulash</span></li>
+                            <li><i class="ph ph-check"></i> <span data-i18n="pr_s_f4">Katta foydalanuvchilar oqimiga bardoshli</span></li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary w-100" data-i18n="pr_btn">Boshlash</a>
+                    </div>
+                    <div class="p-card fade-up delay-2">
+                        <h4 data-i18n="pr_p_t">Premium</h4>
+                        <div class="price" data-i18n="pr_price_3" style="font-size:2.2rem; margin-top:20px;">$1.5k - $20k</div>
+                        <p class="p-desc" data-i18n="pr_p_d">Yirik korxonalar uchun to'liq raqamli o'zgarish.</p>
+                        <ul class="p-features">
+                            <li><i class="ph ph-check"></i> <span data-i18n="pr_p_f1">Tizim va CRM lar: $1,500 - $15,000</span></li>
+                            <li><i class="ph ph-check"></i> <span data-i18n="pr_p_f2">Mobil ilovalar: $5,000 - $20,000</span></li>
+                            <li><i class="ph ph-check"></i> <span data-i18n="pr_p_f3">Narx funksionallikka bo'gliq</span></li>
+                            <li><i class="ph ph-check"></i> <span data-i18n="pr_p_f4">To'liq qo'llab-quvvatlash kafolati</span></li>
+                        </ul>
+                        <a href="#contact" class="btn btn-secondary w-100" data-i18n="pr_btn">Boshlash</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-wrapper fade-up">
+                    <div class="contact-info">
+                        <h2 data-i18n="cont_title">Loyihangizni muhokama qilamiz</h2>
+                        <p data-i18n="cont_desc">Shaklni to'ldiring yoki biz bilan to'g'ridan-to'g'ri bog'laning. Biz 15 daqiqa ichida javob beramiz.</p>
+                        
+                        <div class="contact-details">
+                            <div class="c-item">
+                                <div class="c-icon"><i class="ph ph-map-pin"></i></div>
+                                <div>
+                                    <h5 data-i18n="cont_l_t">Manzil</h5>
+                                    <p data-i18n="cont_l_d">Toshkent shahri, O'zbekiston</p>
+                                </div>
+                            </div>
+                            <div class="c-item">
+                                <div class="c-icon"><i class="ph ph-phone"></i></div>
+                                <div>
+                                    <h5 data-i18n="cont_p_t">Telefon</h5>
+                                    <p>+998 (90) 123-45-67</p>
+                                </div>
+                            </div>
+                            <div class="c-item">
+                                <div class="c-icon"><i class="ph ph-envelope-simple"></i></div>
+                                <div>
+                                    <h5 data-i18n="cont_e_t">Elektron pochta</h5>
+                                    <p>hello@activisiongroup.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-btns">
+                            <a href="#" class="btn btn-social tg"><i class="ph-fill ph-telegram-logo"></i> Telegram</a>
+                            <a href="#" class="btn btn-social wa"><i class="ph-fill ph-whatsapp-logo"></i> WhatsApp</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-box">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name" data-i18n="form_name">Ismingiz</label>
+                                <input type="text" id="name" required placeholder="Ali Valiyev" data-i18n-ph="form_name_ph">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" data-i18n="form_phone">Telefon raqamingiz</label>
+                                <input type="tel" id="phone" required placeholder="+998 90 000 00 00">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" data-i18n="form_msg">Xabar</label>
+                                <textarea id="message" rows="4" required placeholder="Loyihangiz haqida so'zlab bering..." data-i18n-ph="form_msg_ph"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100" data-i18n="form_btn">Xabar Yuborish</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="f-col">
+                    <a href="#" class="logo" style="display:flex; align-items:center; gap:0.5rem;">
+                        <img src="assets/images/logo.png" alt="Activation Logo" style="height: 48px; width: auto; object-fit: contain;">
+                        Activation<span>Group</span>
+                    </a>
+                    <p class="f-desc" data-i18n="foot_desc">Biznesingizni raqamli o'stiramiz. Butun dunyodagi zamonaviy kompaniyalar uchun yuqori sifatli IT xizmatlari.</p>
+                </div>
+                <div class="f-col">
+                    <h4 class="f-title" data-i18n="foot_serv">Xizmatlar</h4>
+                    <ul class="f-links">
+                        <li><a href="#" data-i18n="srv_1_t">Veb Dasturlash</a></li>
+                        <li><a href="#" data-i18n="srv_2_t">Mobil Ilovalar</a></li>
+                        <li><a href="#" data-i18n="srv_3_t">Startap Qurish (MVP)</a></li>
+                        <li><a href="#" data-i18n="srv_4_t">CRM & ERP Tizimlar</a></li>
+                    </ul>
+                </div>
+                <div class="f-col">
+                    <h4 class="f-title" data-i18n="foot_comp">Kompaniya</h4>
+                    <ul class="f-links">
+                        <li><a href="#about" data-i18n="nav_about">Biz haqimizda</a></li>
+                        <li><a href="#portfolio" data-i18n="nav_portfolio">Portfolio</a></li>
+                        <li><a href="#pricing" data-i18n="nav_pricing">Narxlar</a></li>
+                        <li><a href="#contact" data-i18n="nav_contact">Bog'lanish</a></li>
+                    </ul>
+                </div>
+                <div class="f-col">
+                    <h4 class="f-title" data-i18n="foot_foll">Ijtimoiy tarmoqlar</h4>
+                    <div class="f-socials">
+                        <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="#"><i class="ph ph-telegram-logo"></i></a>
+                        <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+                        <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="f-bottom">
+                <p data-i18n="foot_cpy">&copy; 2026 Activision Group. Barcha huquqlar himoyalangan.</p>
+                <div class="f-bottom-links">
+                    <a href="#" data-i18n="foot_priv">Maxfiylik siyosati</a>
+                    <a href="#" data-i18n="foot_term">Foydalanish shartlari</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
