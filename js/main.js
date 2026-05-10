@@ -160,12 +160,11 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.disabled = true;
 
             // Get form data
-            const name = document.getElementById('name').value;
-            const phone = document.getElementById('phone').value;
-            const message = document.getElementById('message').value;
+            const nameValue = document.getElementById('name').value;
+            const phoneValue = document.getElementById('phone').value;
+            const messageValue = document.getElementById('message').value;
 
-            // FormSubmit API endpoint (using AJAX)
-            // Replace with your email if different
+            // FormSubmit API endpoint
             const email = "odiljonsirojiddinov04@gmail.com";
             
             fetch(`https://formsubmit.co/ajax/${email}`, {
@@ -175,27 +174,33 @@ document.addEventListener('DOMContentLoaded', () => {
                     "Accept": "application/json"
                 },
                 body: JSON.stringify({
-                    "Ismi": name,
-                    "Telefon": phone,
-                    "Xabar": message,
+                    "Ismi": nameValue,
+                    "Telefon": phoneValue,
+                    "Xabar": messageValue,
                     "_subject": "Yangi xabar: Activation Group vebsaytidan"
                 })
             })
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Serverdan xato javob keldi');
+                }
+                return response.json();
+            })
             .then(data => {
-                if(data.success === "true") {
-                    // Success feedback
+                // FormSubmit ba'zida "true" (matn) yoki true (boolean) qaytaradi
+                if(data.success === "true" || data.success === true) {
                     btn.innerText = 'Xabar yuborildi!';
-                    btn.style.background = '#10b981'; // Success green
+                    btn.style.background = '#10b981';
                     form.reset();
                 } else {
-                    throw new Error("Xatolik");
+                    console.error('FormSubmit javobi:', data);
+                    throw new Error(data.message || "Xabar yuborilmadi");
                 }
             })
             .catch(error => {
-                console.error('Error:', error);
+                console.error('To\'liq xatolik:', error);
                 btn.innerText = 'Xatolik yuz berdi';
-                btn.style.background = '#ef4444'; // Error red
+                btn.style.background = '#ef4444';
             })
             .finally(() => {
                 setTimeout(() => {
@@ -203,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     btn.style.background = ''; 
                     btn.style.opacity = '1';
                     btn.disabled = false;
-                }, 3000);
+                }, 4000);
             });
         });
     }
