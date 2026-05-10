@@ -145,27 +145,66 @@ document.addEventListener('DOMContentLoaded', () => {
         counterObserver.observe(counter);
     });
 
-    // --- Form Submission (Prevent Default for demo) ---
+    // --- Form Submission (Using FormSubmit.co) ---
     const form = document.getElementById('contactForm');
     if(form) {
         form.addEventListener('submit', (e) => {
             e.preventDefault();
+            
             const btn = form.querySelector('button');
             const originalText = btn.innerText;
-            btn.innerText = 'Sending...';
-            btn.style.opacity = '0.8';
             
-            setTimeout(() => {
-                btn.innerText = 'Message Sent!';
-                btn.style.background = '#10b981'; // success green
-                form.reset();
-                
+            // UI feedback: Loading state
+            btn.innerText = 'Yuborilmoqda...';
+            btn.style.opacity = '0.8';
+            btn.disabled = true;
+
+            // Get form data
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+            // FormSubmit API endpoint (using AJAX)
+            // Replace with your email if different
+            const email = "odiljonsirojiddinov04@gmail.com";
+            
+            fetch(`https://formsubmit.co/ajax/${email}`, {
+                method: "POST",
+                headers: { 
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify({
+                    "Ismi": name,
+                    "Telefon": phone,
+                    "Xabar": message,
+                    "_subject": "Yangi xabar: Activation Group vebsaytidan"
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if(data.success === "true") {
+                    // Success feedback
+                    btn.innerText = 'Xabar yuborildi!';
+                    btn.style.background = '#10b981'; // Success green
+                    form.reset();
+                } else {
+                    throw new Error("Xatolik");
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                btn.innerText = 'Xatolik yuz berdi';
+                btn.style.background = '#ef4444'; // Error red
+            })
+            .finally(() => {
                 setTimeout(() => {
                     btn.innerText = originalText;
-                    btn.style.background = ''; // reset to default
+                    btn.style.background = ''; 
                     btn.style.opacity = '1';
+                    btn.disabled = false;
                 }, 3000);
-            }, 1500);
+            });
         });
     }
 
