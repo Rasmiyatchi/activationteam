@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Form Submission (Using FormSubmit.co) ---
     const form = document.getElementById('contactForm');
     if(form) {
-        form.addEventListener('submit', (e) => {
+        form.addEventListener('submit', function(e) {
             e.preventDefault();
             
             const btn = form.querySelector('button');
@@ -159,42 +159,25 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.style.opacity = '0.8';
             btn.disabled = true;
 
-            // Get form data
-            const nameValue = document.getElementById('name').value;
-            const phoneValue = document.getElementById('phone').value;
-            const messageValue = document.getElementById('message').value;
-
-            // FormSubmit API endpoint
+            const formData = new FormData(this);
             const email = "odiljonsirojiddinov04@gmail.com";
             
             fetch(`https://formsubmit.co/ajax/${email}`, {
                 method: "POST",
+                body: formData,
                 headers: { 
-                    "Content-Type": "application/json",
-                    "Accept": "application/json"
-                },
-                body: JSON.stringify({
-                    "Ismi": nameValue,
-                    "Telefon": phoneValue,
-                    "Xabar": messageValue,
-                    "_subject": "Yangi xabar: Activation Group vebsaytidan"
-                })
-            })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Serverdan xato javob keldi');
+                    'Accept': 'application/json'
                 }
-                return response.json();
             })
+            .then(response => response.json())
             .then(data => {
-                // FormSubmit ba'zida "true" (matn) yoki true (boolean) qaytaradi
                 if(data.success === "true" || data.success === true) {
                     btn.innerText = 'Xabar yuborildi!';
                     btn.style.background = '#10b981';
                     form.reset();
                 } else {
-                    console.error('FormSubmit javobi:', data);
-                    throw new Error(data.message || "Xabar yuborilmadi");
+                    console.error('Xatolik:', data);
+                    throw new Error("Xatolik yuz berdi");
                 }
             })
             .catch(error => {

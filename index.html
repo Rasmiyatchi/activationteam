@@ -409,17 +409,22 @@
                     
                     <div class="contact-form-box">
                         <form id="contactForm">
+                            <!-- FormSubmit configurations -->
+                            <input type="hidden" name="_subject" value="Yangi xabar: Activation Group vebsaytidan">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_captcha" value="false">
+
                             <div class="form-group">
                                 <label for="name" data-i18n="form_name">Ismingiz</label>
-                                <input type="text" id="name" required placeholder="Ali Valiyev" data-i18n-ph="form_name_ph">
+                                <input type="text" name="name" id="name" required placeholder="Ali Valiyev" data-i18n-ph="form_name_ph">
                             </div>
                             <div class="form-group">
                                 <label for="phone" data-i18n="form_phone">Telefon raqamingiz</label>
-                                <input type="tel" id="phone" required placeholder="+998 90 000 00 00">
+                                <input type="tel" name="phone" id="phone" required placeholder="+998 90 000 00 00">
                             </div>
                             <div class="form-group">
                                 <label for="message" data-i18n="form_msg">Xabar</label>
-                                <textarea id="message" rows="4" required placeholder="Loyihangiz haqida so'zlab bering..." data-i18n-ph="form_msg_ph"></textarea>
+                                <textarea name="message" id="message" rows="4" required placeholder="Loyihangiz haqida so'zlab bering..." data-i18n-ph="form_msg_ph"></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary w-100" data-i18n="form_btn">Xabar Yuborish</button>
                         </form>
