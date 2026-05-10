@@ -169,19 +169,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     'Accept': 'application/json'
                 }
             })
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Server hatosi: ' + response.status);
+                }
+                return response.json();
+            })
             .then(data => {
                 if(data.success === "true" || data.success === true) {
                     btn.innerText = 'Xabar yuborildi!';
                     btn.style.background = '#10b981';
                     form.reset();
                 } else {
-                    console.error('Xatolik:', data);
-                    throw new Error("Xatolik yuz berdi");
+                    console.error('FormSubmit error:', data);
+                    throw new Error(data.message || "Xatolik yuz berdi");
                 }
             })
             .catch(error => {
-                console.error('To\'liq xatolik:', error);
+                console.error('Submission error:', error);
                 btn.innerText = 'Xatolik yuz berdi';
                 btn.style.background = '#ef4444';
             })
