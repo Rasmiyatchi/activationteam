@@ -48,7 +48,7 @@ const translations = {
         srv_6_d: "Digital transformation of manual corporate processes to increase company productivity tenfold.",
 
         port_sub: "Our Work",
-        port_title: "Government & Private Projects",
+        port_title: "Featured Projects",
         port_1_tag: "Government App",
         port_1_t: "Mening Uyim",
         port_1_d: "A large-scale project facilitating housing services and resident management.",
@@ -58,6 +58,15 @@ const translations = {
         port_3_tag: "Public Portal",
         port_3_t: "Fatvo.uz",
         port_3_d: "State-supported portal providing verified answers and public outreach.",
+        port_4_tag: "AI Startup",
+        port_4_t: "Ko'rg'on AI",
+        port_4_d: "Full-cycle MVP development for an AI startup — from concept to a launch-ready product with GPT-4 integration.",
+        port_5_tag: "Education System",
+        port_5_t: "CHDPU Practice Portal",
+        port_5_d: "Fully digitalized internship management system for CHDPU university — students, mentors, and HR in one platform.",
+        port_6_tag: "Healthcare",
+        port_6_t: "Mediik",
+        port_6_d: "Modern medical platform connecting patients with doctors — appointment booking and medical records management.",
 
         part_title: "Trusted by government sectors and private businesses",
 
@@ -75,13 +84,17 @@ const translations = {
 
 
         test_sub: "Client Feedback",
-        test_title: "What Founders Say",
+        test_title: "What Our Clients Say",
         test_1_d: "\"The systems INSANE built for us are incredibly fast and perfectly scalable.\"",
         test_1_r: "Director, Public Services",
         test_2_d: "\"Their mobile application engineering is top-notch. Our custom App works flawlessly!\"",
         test_2_r: "Product Owner, GlobalShop",
         test_3_d: "\"Fast, reliable, and highly professional. We trust them with all our technical challenges.\"",
         test_3_r: "CEO, StartTech",
+        test_4_d: "\"INSANE turned our AI startup idea into a fully functional product. The MVP was delivered in 3 weeks — exactly on schedule.\"",
+        test_4_r: "Founder, Ko'rg'on AI",
+        test_5_d: "\"The practice portal INSANE built for CHDPU completely transformed how we manage student internships. Fast, reliable, and easy to use.\"",
+        test_5_r: "Head of Student Internship Dept., CHDPU",
 
         price_sub: "Engagement Models",
         price_title: "Pricing Plans",
@@ -188,7 +201,7 @@ const translations = {
         srv_6_d: "Qo'lda bajariladigan ishlarni to'liq raqamlashtirish orqali jamoa ish unumdorligini kamida 10 barobarga oshirish.",
 
         port_sub: "Bizning ishlarimiz",
-        port_title: "Davlat va Xususiy Loyihalar",
+        port_title: "Taniqli Loyihalar",
         port_1_tag: "Davlat Loyihasi",
         port_1_t: "Fatvo.uz",
         port_1_d: "Aholi savollariga javob beruvchi va xizmat ko'rsatuvchi yirik davlat ijtimoiy portali.",
@@ -198,6 +211,15 @@ const translations = {
         port_3_tag: "Davlat Loyihasi",
         port_3_t: "Bojxona Service",
         port_3_d: "Bojxona sohasidagi murakkab logistika va tizimli jarayonlarni raqamlashtirgan bojxona servisi.",
+        port_4_tag: "AI Startup",
+        port_4_t: "Ko'rg'on AI",
+        port_4_d: "Sun'iy intellekt asosidagi startap uchun to'liq MVP — g'oyadan GPT-4 integratsiyali tayyor mahsulotgacha.",
+        port_5_tag: "Ta'lim Tizimi",
+        port_5_t: "CHDPU Amaliyot Portali",
+        port_5_d: "CHDPU universiteti uchun to'liq raqamlashtirilgan amaliyot boshqaruv tizimi — talabalar, nazoratchilar va HR bitta platformada.",
+        port_6_tag: "Tibbiyot",
+        port_6_t: "Mediik",
+        port_6_d: "Bemorlarni shifokorlar bilan bog'lovchi zamonaviy tibbiyot platformasi — qabulga yozilish va tibbiy yozuvlar boshqaruvi.",
 
         part_title: "Davlat loyihalari va xususiy bizneslar ishonchi",
 
@@ -215,13 +237,17 @@ const translations = {
 
 
         test_sub: "Mijozlar Fikri",
-        test_title: "Asoschi va Tashkilotchilar nima deydi",
+        test_title: "Mijozlarimiz nima deydi",
         test_1_d: "\"INSANE bizga kerakli davlat tizimini mukammal darajada yozib berdi. Tizim xavfsiz va aniq ishlamoqda!\"",
         test_1_r: "Davlat Xizmatlari",
         test_2_d: "\"Bizning biznesimiz uchun yozib berilgan mobil ilova klientlarimizni ushlab qolish darajasini kutilganidan ham oshirdi.\"",
         test_2_r: "Loyiha boshqaruvchisi, GlobalShop",
         test_3_d: "\"Tez, mustahkam hamda xavfsiz. Ayniqsa CRM qismini juda kuchli ishlashgan.\"",
         test_3_r: "CEO, AppWorks",
+        test_4_d: "\"INSANE jamoasi bizning AI startap g'oyamizni to'liq ishlaydigan mahsulotga aylantirdi. MVP 3 hafta ichida tayyor bo'ldi — aniq rejaga muvofiq.\"",
+        test_4_r: "Asoschi, Ko'rg'on AI",
+        test_5_d: "\"INSANE tomonidan CHDPU uchun yaratilgan amaliyot portali talabalar jarayonini butunlay o'zgartirdi. Tez, ishonchli va nihoyatda qulay.\"",
+        test_5_r: "Talabalar amaliyoti bo'limi boshlig'i, CHDPU",
 
         price_sub: "Xizmatlar Narxi",
         price_title: "Dasturlash turlari",
@@ -328,7 +354,7 @@ const translations = {
         srv_6_d: "Цифровая трансформация ручных корпоративных процессов, многократно увеличивающая производительность компании.",
 
         port_sub: "Наши работы",
-        port_title: "Гос. и Частные Проекты",
+        port_title: "Избранные Проекты",
         port_1_tag: "Гос. Проект",
         port_1_t: "Fatvo.uz",
         port_1_d: "Единая справочная информационная платформа для населения.",
@@ -338,6 +364,15 @@ const translations = {
         port_3_tag: "Гос. Проект",
         port_3_t: "Сервис Таможни (Bojxona)",
         port_3_d: "Цифровая логистическая платформа для оптимизации масштабных таможенных процессов.",
+        port_4_tag: "AI Стартап",
+        port_4_t: "Ko'rg'on AI",
+        port_4_d: "Полный цикл разработки MVP для AI-стартапа — от идеи до готового продукта с интеграцией GPT-4.",
+        port_5_tag: "Образование",
+        port_5_t: "Портал Практики CHDPU",
+        port_5_d: "Полностью цифровая система управления практикой для университета CHDPU — студенты, кураторы и HR на одной платформе.",
+        port_6_tag: "Здравоохранение",
+        port_6_t: "Mediik",
+        port_6_d: "Современная медицинская платформа, связывающая пациентов с врачами — запись и управление медкартами.",
 
         part_title: "Нам доверяют государственные проекты и стартапы",
 
@@ -355,13 +390,17 @@ const translations = {
 
 
         test_sub: "Отзывы клиентов",
-        test_title: "Что говорят партнеры",
+        test_title: "Что говорят наши клиенты",
         test_1_d: "\"Государственные системы, которые мы заказывали у INSANE, работают превосходно быстро.\"",
         test_1_r: "Сектор Гос.Услуг",
         test_2_d: "\"Мобильное приложение, которое они разработали для нашего розничного бизнеса, значительно повысило удержание пользователей.\"",
         test_2_r: "Product Owner, GlobalShop",
         test_3_d: "\"Быстро, надежно и невероятно профессионально. Оставив им всю техническую часть, мы смогли сосредоточиться исключительно на бизнесе.\"",
         test_3_r: "CEO, AppWorks",
+        test_4_d: "\"INSANE превратили идею нашего AI-стартапа в полнофункциональный продукт. MVP был сдан за 3 недели — точно по плану.\"",
+        test_4_r: "Основатель, Ko'rg'on AI",
+        test_5_d: "\"Портал практики от INSANE полностью изменил то, как мы управляем стажировками студентов. Быстрый, надёжный и простой в использовании.\"",
+        test_5_r: "Нач. отдела практики студентов, CHDPU",
 
         price_sub: "Стоимость услуг",
         price_title: "Категории Разработки",
