@@ -14,32 +14,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const i18nPhElements = document.querySelectorAll('[data-i18n-ph]');
 
     function setLanguage(lang) {
-        // translations is available from translations.js
-        if(typeof translations === 'undefined') return;
+        if (typeof translations === 'undefined') return;
         const dict = translations[lang];
-        if(!dict) return;
-        
+        if (!dict) return;
+
         document.documentElement.lang = lang;
+        localStorage.setItem('lang', lang);
 
         i18nElements.forEach(el => {
             const key = el.getAttribute('data-i18n');
-            if(dict[key]) {
-                el.innerHTML = dict[key]; 
-            }
+            if (dict[key]) el.innerHTML = dict[key];
         });
 
         i18nPhElements.forEach(el => {
             const key = el.getAttribute('data-i18n-ph');
-            if(dict[key]) {
-                el.setAttribute('placeholder', dict[key]);
-            }
+            if (dict[key]) el.setAttribute('placeholder', dict[key]);
         });
 
         langBtns.forEach(btn => {
-            btn.classList.remove('active');
-            if(btn.getAttribute('data-lang') === lang) {
-                btn.classList.add('active');
-            }
+            btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
         });
     }
 
@@ -49,44 +42,48 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Apply saved or default language on load
+    setLanguage(localStorage.getItem('lang') || 'uz');
+
     // --- Mobile Menu Toggle ---
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
     const navItems = document.querySelectorAll('.nav-link');
 
-    mobileMenuBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        const icon = mobileMenuBtn.querySelector('i');
-        if (navLinks.classList.contains('active')) {
-            icon.classList.remove('ph-list');
-            icon.classList.add('ph-x');
-        } else {
-            icon.classList.remove('ph-x');
-            icon.classList.add('ph-list');
-        }
-    });
-
-    // Close menu when clicking a link
-    navItems.forEach(item => {
-        item.addEventListener('click', () => {
-            navLinks.classList.remove('active');
+    if (mobileMenuBtn && navLinks) {
+        const toggleMenuIcon = (isOpen) => {
             const icon = mobileMenuBtn.querySelector('i');
-            icon.classList.remove('ph-x');
-            icon.classList.add('ph-list');
-        });
-    });
+            if (!icon) return;
+            icon.classList.toggle('ph-list', !isOpen);
+            icon.classList.toggle('ph-x', isOpen);
+        };
 
+        mobileMenuBtn.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('active');
+            toggleMenuIcon(isOpen);
+        });
+
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                toggleMenuIcon(false);
+            });
+        });
+    }
 
     // --- Sticky Navbar ---
     const navbar = document.getElementById('navbar');
-    
+    let scrollTicking = false;
+
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
+        if (!scrollTicking) {
+            requestAnimationFrame(() => {
+                navbar.classList.toggle('scrolled', window.scrollY > 50);
+                scrollTicking = false;
+            });
+            scrollTicking = true;
         }
-    });
+    }, { passive: true });
 
 
     // --- Scroll Animations (Intersection Observer) ---
@@ -112,38 +109,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Counter Animation ---
     const counters = document.querySelectorAll('.counter');
-    const speed = 200; // The lower the slower
 
     const counterObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const counter = entry.target;
-                const updateCount = () => {
-                    const target = +counter.getAttribute('data-target');
-                    const count = +counter.innerText;
+            if (!entry.isIntersecting) return;
+            const counter = entry.target;
+            const target = +counter.getAttribute('data-target');
+            const duration = 1800;
+            let startTime = null;
 
-                    // Lower inc to slow and higher to speed up
-                    const inc = target / speed;
+            const step = (timestamp) => {
+                if (!startTime) startTime = timestamp;
+                const elapsed = timestamp - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                counter.innerText = Math.ceil(progress * target);
+                if (progress < 1) {
+                    requestAnimationFrame(step);
+                } else {
+                    counter.innerText = target + '+';
+                }
+            };
 
-                    // Check if target is reached
-                    if (count < target) {
-                        // Add inc to count and output in counter
-                        counter.innerText = Math.ceil(count + inc);
-                        // Call function every ms
-                        setTimeout(updateCount, 15);
-                    } else {
-                        counter.innerText = target + '+';
-                    }
-                };
-                updateCount();
-                observer.unobserve(counter);
-            }
+            requestAnimationFrame(step);
+            observer.unobserve(counter);
         });
     }, { threshold: 0.5 });
 
-    counters.forEach(counter => {
-        counterObserver.observe(counter);
-    });
+    counters.forEach(counter => counterObserver.observe(counter));
 
     // --- Form Submission (Using FormSubmit.co) ---
     const form = document.getElementById('contactForm');

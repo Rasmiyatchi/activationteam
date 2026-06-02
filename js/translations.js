@@ -7,8 +7,8 @@ const translations = {
         nav_pricing: "Pricing",
         nav_contact: "Contact Us",
 
-        hero_badge: "🚀 Web & Software Agency",
-        hero_title: "Building Digital <span class='text-gradient'>Futures</span>",
+        hero_badge: "⚡ Web & Software Agency",
+        hero_title: "Building <span class='text-gradient'>Insane</span> Products",
         hero_desc: "Professional IT Services, Mobile Apps, and Startup solutions. We engineer robust, scalable technologies for modern businesses and visionary founders.",
         hero_btn1: "Get a Consultation",
         hero_btn2: "View Our Work",
@@ -17,8 +17,8 @@ const translations = {
         stat_projects: "Projects Deployed",
 
         about_sub: "About Us",
-        about_title: "Who is Activation Group?",
-        about_lead: "We are a premium software engineering agency specializing in custom web, mobile, and startup product development.",
+        about_title: "Who is INSANE?",
+        about_lead: "INSANE is a premium software engineering agency specializing in custom web, mobile, and startup product development.",
         about_desc: "Our mission is to turn brilliant ideas into functional, market-ready digital products. We act as your dedicated technical partner from MVP to enterprise scaling.",
         about_f1: "Scalable architecture",
         about_f2: "Modern tech stacks",
@@ -61,7 +61,7 @@ const translations = {
 
         part_title: "Trusted by government sectors and private businesses",
 
-        team_sub: "Activation Experts",
+        team_sub: "INSANE Team",
         team_title: "Meet Our Team",
         team_1_n: "Odiljon Sirojiddinov",
         team_1_r: "Founder & Project Manager",
@@ -76,7 +76,7 @@ const translations = {
 
         test_sub: "Client Feedback",
         test_title: "What Founders Say",
-        test_1_d: "\"The state systems Activation developed for us are incredibly fast and perfectly scalable.\"",
+        test_1_d: "\"The systems INSANE built for us are incredibly fast and perfectly scalable.\"",
         test_1_r: "Director, Public Services",
         test_2_d: "\"Their mobile application engineering is top-notch. Our custom App works flawlessly!\"",
         test_2_r: "Product Owner, GlobalShop",
@@ -131,11 +131,11 @@ const translations = {
         form_msg_ph: "Tell us what you want to build...",
         form_btn: "Send Request",
 
-        foot_desc: "Engineering the future. High-quality IT development, startups architecture, and mobile solutions worldwide.",
+        foot_desc: "INSANE — Engineering the future. High-quality IT development, startups architecture, and mobile solutions worldwide.",
         foot_serv: "Services",
         foot_comp: "Company",
         foot_foll: "Follow Us",
-        foot_cpy: "© 2026 Activation Group. All rights reserved.",
+        foot_cpy: "© 2026 INSANE. All rights reserved.",
         foot_priv: "Privacy Policy",
         foot_term: "Terms of Service"
     },
@@ -147,8 +147,8 @@ const translations = {
         nav_pricing: "Narxlar",
         nav_contact: "Bog'lanish",
 
-        hero_badge: "🚀 Dasturlash va IT Kompaniyasi",
-        hero_title: "Raqamli <span class='text-gradient'>Kelajakni</span> Quramiz",
+        hero_badge: "⚡ Dasturlash va IT Kompaniyasi",
+        hero_title: "<span class='text-gradient'>INSANE</span> Mahsulotlar Yaratamiz",
         hero_desc: "Zamonaviy bizneslar va startaplar uchun professional IT xizmatlar, Mobil ilovalar va maxsus dasturiy yechimlar yaratamiz.",
         hero_btn1: "Konsultatsiya olish",
         hero_btn2: "Loyihalarni ko'rish",
@@ -157,8 +157,8 @@ const translations = {
         stat_projects: "Ishga Tushirilgan Loyihalar",
 
         about_sub: "Biz haqimizda",
-        about_title: "Activation Group o'zi nima?",
-        about_lead: "Biz noldan maxsus veb, mobil dasturlar va yangi startap mahsulotlarini yaratishga ixtisoslashgan yetakchi IT kompaniyamiz.",
+        about_title: "INSANE o'zi nima?",
+        about_lead: "INSANE — noldan maxsus veb, mobil dasturlar va yangi startap mahsulotlarini yaratishga ixtisoslashgan yetakchi IT kompaniyamiz.",
         about_desc: "Bizning vazifamiz qog'ozdagi ajoyib g'oyalarni real bozorga tayyor raqamli mahsulotlarga aylantirishdir. Biz MVP (boshlang'ich mahsulot) ishlab chiqishdan tortib yirik muassasalarning murakkab dasturiy ehtiyojlarigacha sizning ishonchli texnik hamkoringiz bo'lamiz.",
         about_f1: "Kengaytirilishi oson bo'lgan arxitektura",
         about_f2: "Eng zamonaviy dasturlash tillari",
@@ -216,7 +216,7 @@ const translations = {
 
         test_sub: "Mijozlar Fikri",
         test_title: "Asoschi va Tashkilotchilar nima deydi",
-        test_1_d: "\"Activation Group bizga kerakli davlat tizimini mukammal darajada yozib berdi. Tizim xavfsiz va aniq ishlamoqda!\"",
+        test_1_d: "\"INSANE bizga kerakli davlat tizimini mukammal darajada yozib berdi. Tizim xavfsiz va aniq ishlamoqda!\"",
         test_1_r: "Davlat Xizmatlari",
         test_2_d: "\"Bizning biznesimiz uchun yozib berilgan mobil ilova klientlarimizni ushlab qolish darajasini kutilganidan ham oshirdi.\"",
         test_2_r: "Loyiha boshqaruvchisi, GlobalShop",
@@ -252,7 +252,7 @@ const translations = {
         pr_p_d: "Murakkab funksionallikga qarab baholanadi.",
         pr_p_f1: "Tizim va CRM lar: $1,500 - $15,000",
         pr_p_f2: "Mobil ilovalar: $5,000 - $20,000",
-        pr_p_f3: "Narx funksionallikka bo'gliq",
+        pr_p_f3: "Narx funksionallikka bog'liq",
         pr_p_f4: "To'liq qo'llab-quvvatlash kafolati",
         
         pr_btn: "Loyihani Boshlash",
@@ -271,11 +271,11 @@ const translations = {
         form_msg_ph: "O'z g'oyangiz/biznesingizga qanday dastur kerakligini tasvirlab bering...",
         form_btn: "Talabnoma Yuborish",
 
-        foot_desc: "Kelajak texnologiyasi. Zamonaviy dunyo startaplari va bizneslari uchun maxsus mobil va veb dasturlash echimlari.",
+        foot_desc: "INSANE — Kelajak texnologiyasi. Zamonaviy dunyo startaplari va bizneslari uchun maxsus mobil va veb dasturlash echimlari.",
         foot_serv: "Axborot Texnologiyalar",
         foot_comp: "Kompaniya",
         foot_foll: "Bizni kuzating",
-        foot_cpy: "© 2026 Activation Group. Barcha huquqlar himoyalangan.",
+        foot_cpy: "© 2026 INSANE. Barcha huquqlar himoyalangan.",
         foot_priv: "Maxfiylik siyosati",
         foot_term: "Foydalanish shartlari"
     },
@@ -287,8 +287,8 @@ const translations = {
         nav_pricing: "Цены",
         nav_contact: "Контакты",
 
-        hero_badge: "🚀 IT и Разработка ПО",
-        hero_title: "Мы Создаем Ваше Цифровое <span class='text-gradient'>Будущее</span>",
+        hero_badge: "⚡ IT и Разработка ПО",
+        hero_title: "Мы Создаем <span class='text-gradient'>INSANE</span> Продукты",
         hero_desc: "Профессиональные IT-услуги, создание мобильных приложений и разработка стартапов под ключ для современных компаний и фаундеров.",
         hero_btn1: "Получить консультацию",
         hero_btn2: "Наши проекты",
@@ -297,8 +297,8 @@ const translations = {
         stat_projects: "Запущенных IT проектов",
 
         about_sub: "О нас",
-        about_title: "Кто такие Activation Group?",
-        about_lead: "Мы — высококлассная IT-компания, специализирующаяся на разработке нестандартных веб-решений, мобильных приложений и стартап-продуктов на заказ.",
+        about_title: "Кто такие INSANE?",
+        about_lead: "INSANE — высококлассная IT-компания, специализирующаяся на разработке нестандартных веб-решений, мобильных приложений и стартап-продуктов на заказ.",
         about_desc: "Наша миссия — превращать блестящие идеи в готовые к выходу на рынок цифровые продукты. Мы выступаем вашим надежным техническим партнером от этапа MVP до масштабирования на уровне enterprise-компаний.",
         about_f1: "Масштабируемая архитектура",
         about_f2: "Современные IT технологии (Stack)",
@@ -356,7 +356,7 @@ const translations = {
 
         test_sub: "Отзывы клиентов",
         test_title: "Что говорят партнеры",
-        test_1_d: "\"Государственные системы, которые мы заказывали у компании, работают превосходно быстро.\"",
+        test_1_d: "\"Государственные системы, которые мы заказывали у INSANE, работают превосходно быстро.\"",
         test_1_r: "Сектор Гос.Услуг",
         test_2_d: "\"Мобильное приложение, которое они разработали для нашего розничного бизнеса, значительно повысило удержание пользователей.\"",
         test_2_r: "Product Owner, GlobalShop",
@@ -411,11 +411,11 @@ const translations = {
         form_msg_ph: "Расскажите, какой продукт мы будем строить...",
         form_btn: "Отправить запрос",
 
-        foot_desc: "Проектируем будущее. Качественная IT-разработка под заказ, мобильные приложения и стартапы.",
+        foot_desc: "INSANE — Проектируем будущее. Качественная IT-разработка под заказ, мобильные приложения и стартапы.",
         foot_serv: "IT-Услуги",
         foot_comp: "Компания",
         foot_foll: "Подписаться",
-        foot_cpy: "© 2026 Activation Group. Все права защищены.",
+        foot_cpy: "© 2026 INSANE. Все права защищены.",
         foot_priv: "Политика конфиденциальности",
         foot_term: "Условия использования"
     }
